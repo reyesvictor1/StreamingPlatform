@@ -1,0 +1,139 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+*, *::before, *::after { 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    /* outline: 2px solid red; */
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 15%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 0% 5%;
+}
+
+main {
+  height: 80%;
+  padding: 2%;
+  background-color: gray;
+}
+
+footer {
+  height: 5%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  background-color: lightcoral;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.movie-details {
+  height: 80%;
+  background-color: gray;
+}
+
+.movie-card {
+  flex-grow: 1;
+  border: 2px solid black;
+  min-width: 20%;
+  max-width: 24%;
+  height: 48%;
+  background-color: rgb(128, 37, 37);
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.movie-image {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.movie-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.buy-rent-info {
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+
+.page-title {
+  color: white;
+  padding-left: 50px;
+}
+
+#website-title {
+  color: red;
+}
+
+#footer-text {
+  color: white;
+}
+
+#github-icon {
+    max-height: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0.5rem;
+}
+
+.searchbar {
+  flex-grow: 1.5;
+  max-width: 50%;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  background-color: #686565;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.searchbar::placeholder {
+    color: #aaa;
+}
