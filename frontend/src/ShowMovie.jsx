@@ -27,7 +27,7 @@ function ShowMovie() {
       <Header pageTitle={""}/>
         <div className="movie-details">
           <h1>{movie.name}</h1>
-          <img src={`/src/assets/${id}.jpg`} height="70%"/>
+          <img src={`/assets/${id}.jpg`} height="70%"/>
           <p>⏱ {movie.duration} mins</p>
           <p>⭐ {movie.rating}</p>
           <Link to={`/movies/rent/${id}`}>

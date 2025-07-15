@@ -33,7 +33,7 @@ function RentMovie() {
       <Header pageTitle={"Rent"}/>
       <main>
         <h2>{movie.name}</h2>
-        <img src={`/src/assets/${id}.jpg`} height="50%"/>
+        <img src={`/assets/${id}.jpg`} height="50%"/>
         <p className="buy-rent-info">
           Rent for <span> </span>  
           <input type="number" min="1" max="10" value={days}

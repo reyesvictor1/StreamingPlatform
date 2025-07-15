@@ -7,7 +7,7 @@ function MovieCard({ id, name, duration, rating }) {
       <div>
         <h3>{name}</h3>
         <div className="movie-image">
-          <img src={`/src/assets/${id}.jpg`} alt={name} />
+          <img src={`/assets/${id}.jpg`} alt={name} />
         </div>
         <p>⏱ {duration} mins</p>
         <p>⭐ {rating}</p>

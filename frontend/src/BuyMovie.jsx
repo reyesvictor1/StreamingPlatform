@@ -30,7 +30,7 @@ function BuyMovie() {
       <Header pageTitle={"Buy"}/>
       <main>
         <h2>{movie.name}</h2>
-        <img src={`/src/assets/${id}.jpg`} height="50%"/>
+        <img src={`/assets/${id}.jpg`} height="50%"/>
         <p className="buy-rent-info">Buy for ${movie.price}</p>
         <Link to={"/"}>
           <button>Cancel</button>
